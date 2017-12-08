@@ -7,7 +7,9 @@ app.get('/',function(req,res){
 
 app.get('/persons',function(req,res){
 	console.log('Inside get persons method');
+
 	
+// This is used to get the persons data from MongoDB	
 	Persons.getPersons(function(err,data){
 		if (err){throw err;}
 		
