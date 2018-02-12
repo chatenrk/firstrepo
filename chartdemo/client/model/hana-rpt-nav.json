@@ -18,7 +18,7 @@
 			"RepName":	"QoQ Deployment Type & Top 10 Opportunities",
 			"RepDate":	"2014-06-16T00:00:00",
 			"Region": 	"APJ"
-					
+
 		},
 		{
 			"RepId":	"04",
@@ -52,6 +52,24 @@
 			"RepId":	"08",
 			"RepType":	"T",
 			"RepName":	"Top 20 Upside Deals",
+			"RepDate":	"2014-06-16T07:53:00"
+		},
+		{
+			"RepId":	"09",
+			"RepType":	"T",
+			"RepName":	"Line Chart",
+			"RepDate":	"2014-06-16T07:53:00"
+		},
+		{
+			"RepId":	"10",
+			"RepType":	"T",
+			"RepName":	"Area Chart",
+			"RepDate":	"2014-06-16T07:53:00"
+		},
+		{
+			"RepId":	"10",
+			"RepType":	"T",
+			"RepName":	"Pie Chart",
 			"RepDate":	"2014-06-16T07:53:00"
 		}
 	]

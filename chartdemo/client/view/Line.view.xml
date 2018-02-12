@@ -1,0 +1,26 @@
+<core:View xmlns:core="sap.ui.core" 
+		   xmlns:mvc="sap.ui.core.mvc" 
+		   xmlns:l="sap.ui.layout"
+		   xmlns="sap.m"
+		controllerName="chart_demo.view.Line" 
+		xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Line Chart" class="sapUiFioriObjectPage"
+		showNavButton="{device>/isPhone}" navButtonPress="handleNavButtonPress"
+		navButtonTap="onBackButtonPress">
+		<l:VerticalLayout class="panelBoxContainer sapUiFioriObjectPage"
+			width="100%">
+			<l:content>
+				<Panel>
+					<headerToolbar>
+						<Toolbar>
+							<Label text="Line Chart" />
+						</Toolbar>
+					</headerToolbar>
+					<FlexBox id="LineChartHolder" alignItems="Start"
+						justifyContent="Center"></FlexBox>
+				</Panel>
+				
+			</l:content>
+		</l:VerticalLayout>
+	</Page>
+</core:View>
