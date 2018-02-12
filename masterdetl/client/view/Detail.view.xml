@@ -1,0 +1,79 @@
+<mvc:View
+	controllerName="sap.ui.demo.masterdetail.controller.Detail"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.m.semantic">
+
+	<semantic:DetailPage
+		id="page"
+		navButtonPress="onNavBack"
+		showNavButton="{device>/system/phone}"
+		title="{i18n>detailTitle}"
+		busy="{detailView>/busy}"
+		busyIndicatorDelay="{detailView>/delay}">
+
+		<semantic:content>
+			<ObjectHeader
+				id="objectHeader"
+				title="{Name}"
+				number="{
+					path: 'UnitNumber',
+					formatter: '.formatter.currencyValue'
+				}"
+				numberUnit="{UnitOfMeasure}">
+			</ObjectHeader>
+			<IconTabBar
+				id="iconTabBar"
+				class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter
+						id="iconTabBarFilter1"
+						icon="sap-icon://hint"
+						tooltip="{i18n>detailIconTabBarInfo}">
+					</IconTabFilter>
+					<IconTabFilter
+						id="iconTabBarFilter2"
+						icon="sap-icon://attachment"
+						tooltip="{i18n>detailIconTabBarAttachments}">
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+			<Table
+				id="lineItemsList"
+				items="{parts_data>/}"
+				updateFinished="onListUpdateFinished"
+				noDataText="{i18n>detailLineItemTableNoDataText}"
+				busyIndicatorDelay="{detailView>/lineItemTableDelay}">
+				<headerToolbar>
+					<Toolbar id="lineItemsToolbar">
+						<Title
+							id="lineItemsHeader"
+							text="{detailView>/lineItemListTitle}"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>detailLineItemName}"/>
+					</Column>
+					<Column
+						minScreenWidth="Tablet"
+						demandPopin="true"
+						hAlign="End">
+						<Text text="{i18n>detailLineItemManufacturer}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier
+								title="{parts_data>Name}"/>
+								<ObjectIdentifier
+									title="{parts_data>Manufacturer}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</semantic:content>
+	</semantic:DetailPage>
+
+</mvc:View>

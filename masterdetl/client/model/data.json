@@ -1,0 +1,47 @@
+{
+"products":[
+  {
+    "id":"1",
+    "Name":"Television",
+    "parts":[
+      {
+        "Name":"speaker",
+        "Manufacturer":"Bose"
+      },
+      {
+        "Name":"Panel",
+        "Manufacturer":"Samsung"
+      }
+    ]
+  },
+  {
+    "id":"2",
+    "Name":"Laptop",
+    "parts":[
+      {
+        "Name":"keyboard",
+        "Manufacturer":"Lenovo"
+      },
+      {
+        "Name":"Mouse",
+        "Manufacturer":"Apple"
+      }
+    ]
+  },
+  {
+    "id":"3",
+    "Name":"Car",
+    "parts":[
+      {
+        "Name":"Engine",
+        "Manufacturer":"Fiat"
+      },
+      {
+        "Name":"Tyres",
+        "Manufacturer":"MRF"
+      }
+    ]
+  }
+]
+
+}
